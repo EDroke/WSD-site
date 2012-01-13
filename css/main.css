@@ -177,6 +177,7 @@ nav a:active {
 
 .gallery{
 	margin: 10px;
+	background: #a1a1a1;
 	border: 1px solid #333;
 	height: auto;
 	width: auto;
