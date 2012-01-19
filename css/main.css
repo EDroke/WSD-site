@@ -6,47 +6,67 @@
 	- dark blue		#0b175f
 	- dark gray		#5c5c5c
 	-------------------------------------------------*/
-	
+
 body{
-	width: 960px;
+	margin: 0px auto;
+	background: url('../images/bg_cloth.jpg');
+}
+	
+#wrapper{
+	max-width: 960px;
 	margin: 0px auto;
 	padding: 0px;
 }
 
 h1, h2{
-	font: 2.2em 'Droid Serif', 'Trajan Pro', serif;
+	font: 2.2em 'Droid Serif', 'Trajan Pro', serif; /*16 x 2.2 = 35.2px*/
 }
 
-body h1{
+header h1{
 	color: #fff;
 	text-shadow: 5px 5px 2px #333;
 	text-align: center;
-	border-top: 39px solid #a1a1a1;
 	padding-top: 8px;
 	padding-bottom: 8px;
-	margin: 0px auto;
+	margin: 39px auto;
 	background: #5c5c5c
 }
 
 .logo{
-	padding: 15px 50px 15px 15px;
+	width: 24.270833%; /* 233 / 960*/
+	max-height: 100%;
+	padding: 1.5625%; /*15px / 960*/
 	float: left;
+}
+
+.logo img{
+	max-width: 100%;
 }
 
 header{
 	background: #a1a1a1;
-	height: 178px;
+	overflow: hidden;
 }
 
 /*---------------Handle the Navigation buttons---------------------*/
 nav{
-	padding-right: 30px;
+	padding-right: 3.125%; /*30px / 960 */
+	padding-left: 3.125%
+}
+
+nav ul{
+	overflow: hidden;
+	padding-left: 0px;
+	margin: 5px auto;
+	clear: both;
 }
 
 nav ul li{
-	display: inline-block;
+	display: inline;
 	font: 1em/3 arial, helvetica, sans-serif;
-	margin: 5px 10px;
+	margin: 0px auto;
+	padding-left: 1.4347202%; /*10px / 697px*/
+	width: 20%;
 	float: right;
 }
 
@@ -70,8 +90,8 @@ nav a:visited{
 	color: #fff;
 	text-shadow: 2px 2px 2px #414141;
 	text-align: center;
-	height: 50px;
-	width: 120px;
+	width: 100%;
+	max-width: 120px;
 	float: right;
 	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,.2);
 	-moz-box-shadow: 0 2px 4px rgba(0,0,0,.2);
@@ -128,7 +148,6 @@ nav a:active {
 /*----------------Main Background--------------------------*/
 
 .main{
-	background: url(images/Man4.jpg) no-repeat center center fixed;
 	max-width: 100%;
 	max-height: 100%;
 	min-width: 10%;
@@ -139,12 +158,18 @@ nav a:active {
 	border-bottom: 10px solid #2a3891;
 }
 
+.main img{
+	max-width: 100%;
+}
+
 /*--------------About Jason--------------------------------*/
 
 .about{
 	margin: 0px;
 	border-top: 10px solid #760610;
-	padding-bottom: 33px;
+	border-bottom: 10px solid #2a3891;
+	padding-left: 1.4347202%; /*10px / 697px*/
+	padding-right: 1.4347202%; /*10px / 697px*/
 	background: #fff;
 }
 
@@ -158,37 +183,57 @@ nav a:active {
 	font: 1.5em arial, helvetica, sans-serif;
 	color: #fff;
 	background: #2a3891;
-	padding-left: 5px;
+	padding-left: 2.2624434%; /*5px / 221*/
 	margin: 20px auto 5px auto;
 }
 
 .about p{
 	font: .9em arial, helvetica, sans-serif;
-	text-indent: 20px;
+	text-indent: 9.0497738%; /*20px / 221*/
 	margin: 5px auto;
 }
 
 .about div{
 	-moz-column-count: 4;
-	-moz-column-gap: 25px;
+	-moz-column-gap: 2.6041667%; /*25px / 960*/
 }
 
 /*-----------------------Gallery--------------------------*/
 
-.gallery{
-	margin: 10px;
+.gallery {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 1.0416667%;
+	margin-left: 1.0416667%;
 	background: #a1a1a1;
 	border: 1px solid #333;
 	height: auto;
 	width: auto;
 	float: left;
 	text-align: center;
+	overflow: hidden;
+}
+
+.gallery .images {
+	max-width: 168px;
 }
 
 .gallery img{
+	max-width: 100%;
+}
+
+.gallery a:link,
+.gallery a:visited{
 	display: inline-block;
-	margin: 10px;
+	max-width: 168px;
+	max-height: 48px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 1.0416667%;
+	margin-left: 1.0416667%;
+	padding: 0px;
 	border: 1px solid #444;
+	max-width: 100%;
 }
 
 .gallery a:hover,
@@ -201,12 +246,15 @@ nav a:active {
 	border: #2a3891;
 }
 
+/*-------Button to top-------------*/
+
 #mean{
 	clear: both;
 	height: 25px;
-	border-bottom: 10px solid #2a3891;
 	margin: 5px auto;
 	padding: 10px;
+	background: #fff;
+	-moz-column-count: 1;
 }
 
 #mean a:link,
@@ -246,14 +294,16 @@ nav a:active {
 /*------------------------Article and Events---------------------------------*/
 
 .events{
-	border-top: 10px solid #760610;;
+	border-top: 10px solid #760610;
+	padding-left: 1.4347202%; /*10px / 697px*/
+	padding-right: 1.4347202%; /*10px / 697px*/
 	margin-top: 5px;
 	clear: both;
 }
 
 .events p{
 	font: .9em arial, helvetica, sans-serif;
-	text-indent: 20px;
+	text-indent: 3.3333333%; /*20px /600*/
 	margin: 5px auto;
 }
 
@@ -267,7 +317,7 @@ article{
 	background-color: rgba(42, 56, 145, 0.4);
 	border: 3px solid #000;
 	border-radius: 10px;
-	width: 600px;
+	width: 62.5%; /*600px / 960px*/
 	padding: 10px;
 	margin: 10px auto;
 	float: right;
@@ -298,6 +348,8 @@ article h2{
 
 .events a:link,
 .events a:visited{
+	clear: both;
+	margin-bottom: 10px;
 	font: 1em/2 arial, helvetica, sans-serif;
 	text-decoration: none;
 	color: #fff;
@@ -335,6 +387,10 @@ article h2{
 	border-top: 10px solid #2a3891;
 	border-bottom: 10px solid #2a3891;
 	clear: both;
+}
+
+.cta h2{
+	padding: 1.041667%; /* 10px / 960*/
 }
 
 .button {
@@ -395,10 +451,18 @@ footer{
 	padding-top: 10px;
 	background: #5c5c5c;
 	font-family: arial, helvetica, sans-serif;
+	overflow: hidden;
+}
+
+footer .logo{
+	padding: 0px;
 }
 
 footer img{
 	float: left;
+	max-width: 50%;
+	padding-left: 6.25%; /*60px / 960*/
+	padding-bottom: 10px;
 }
 
 footer ul{
@@ -409,7 +473,9 @@ footer ul{
 
 footer li{
 	display: inline-block;
-	padding: 15px;
+	padding-top: 3px;
+	padding-left: 1.5625%; /*15px / 960*/
+	padding-bottom: 3px;
 	text-align: center;
 }
 
@@ -429,4 +495,101 @@ footer h4, h5{
 	text-align: center;
 	margin: 0px auto;
 	color: #a1a1a1;
+}
+
+/*================================Media Queries=======================*/
+
+/*---Tablets portrait up to standard 960 (devices and browsers)---*/
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	
+	/*#wrapper { 	background-color: yellow;	}*/
+	h2 { font-size: 1.5em;	}
+	.about h3 { font-size: 1em;}
+	.about p { font-size: 0.8em;}
+	.events h3 { font-size: 1em;}
+	.events p { font-size: 0.8em;}
+	.events li { font-size: 0.8em;}
+	header h1 { margin-bottom: 15px;}
+	
+}
+
+/*---Mobile landscape up to Tablet Portrait (devices and browsers)---*/
+@media screen and (min-width: 480px) and (max-width: 767px) {
+	
+	/*#wrapper { 	background: green;	}*/
+	h2 { font-size: 1.5em;	}
+	.about h3 { font-size: 1em;
+				width: 25%;
+				margin: 5px;}
+	.about p { font-size: 0.8em;
+				text-indent: 2.0833333%;}
+	.events h3 { font-size: 1em;}
+	.events p { font-size: 0.8em;
+				text-indent: 2.0833333%;}
+	.events ul { padding-left: 2.5%;
+					padding-right: 2.5%;
+					margin: 10px auto;}			
+	.events li { font-size: 0.8em;}
+	header h1 { font-size: 1.8em;
+				margin-top: 30px;
+				margin-bottom: 20px;}
+	.about div{ -moz-column-count: 1;}
+	.gallery { margin: 10px auto;
+				max-width: 550px;}
+	.gallery span{ clear: left;}
+	article { width: 90%;
+				float: none;}
+	.logo{ display: none;}
+	nav ul{ padding: 0px;
+			text-align: center;
+			margin: 0px auto;
+			float: none;}
+	nav ul li{ width: 25%;
+			text-align: center;
+			margin: 0px auto;
+			padding: 0px;}
+	nav a{ max-width: 100%;
+			float: none;}
+	footer ul { margin: 0px;}		
+	
+}
+
+/*---Mobile portrait up to Mobile Landscape (devices and browsers)---*/
+@media screen and (max-width: 479px) {
+	
+	/*#wrapper { 	background: blue;	}*/
+		h2 { font-size: 1.5em;	}
+	.about h3 { font-size: 1em;
+				width: 25%;
+				margin: 5px;}
+	.about p { font-size: 0.8em;
+				text-indent: 2.0833333%;}
+	.events h3 { font-size: 1em;}
+	.events p { font-size: 0.8em;
+				text-indent: 2.0833333%;}
+	.events ul { padding-left: 2.5%;
+					padding-right: 2.5%;
+					margin: 10px auto;}			
+	.events li { font-size: 0.8em;}
+	header h1 { font-size: 1.8em;
+				margin-top: 10px;
+				margin-bottom: 20px;}
+	.about div{ -moz-column-count: 1;}
+	.gallery { margin: 10px auto;
+				max-width: 550px;}
+	.gallery span{ clear: left;}
+	article { width: 90%;
+				float: none;}
+	.logo{ display: none;}
+	nav ul{ padding: 0px;
+			text-align: center;
+			margin: 0px auto;
+			float: none;}
+	nav ul li{ width: 25%;
+			text-align: center;
+			margin: 0px auto;
+			padding: 0px;}
+	nav a{ max-width: 100%}
+	footer ul { margin: 0px;}		
+	footer li { font-size: 0.8em;}
 }
