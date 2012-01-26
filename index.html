@@ -98,32 +98,93 @@
 
 	<div class="cta">
 		<h2 id="take_action">Take Action</h2>
-
-		<!--<h3>You can make a difference!</h3>
-		<h4>Donate</h4>
-			<ul>
-			<li>$10</li>
-			<li>$20</li>
-			<li>$50</li>
-			<li>Other<li>
-			</ul>
-		<h4>Volunteer</h4>
-			<ul>
-			<li>Work the phones.</li>
-			<li>Hand out flyers.</li>
-			<li>Put up a sign.</li>
-			</ul>
-		<h4>Sign Up</h4>
-			<ul>
-			<li>Name</li>
-			<li>Address</li>
-			<li>Email</li>
-			<li>Phone</li>
-			</ul>
 		
-		<button>Submit</button>
+		<h3>You can help Jason make a difference!</h3>
+		
+		<div>
+			<table summary="Ways you can volunteer and donate.">
+				<thead>
+				<tr>
+					<th>Advertise</th>
+					<th>Phone Bank</th>
+					<th>Poll Booth</th>
+					<th class="donate">Donate</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Put up signs and flyers around your neighborhood.</td>
+					<td>Make calls to remind folks to vote, and take donations over the phone.</td>
+					<td>Help organize voters and count votes at polling locations on election day.</td>
+					<td><span>Contribute to the campaign fund and help Jason make a difference.</span></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<form method="post" action="mailto:example@example.com">
+			
+			<div class="personal">
+				<label for="name_first">First Name</label>
+				<input type="text" name="name_first" id="name_first"/>
+			</div>
+			
+			<div class="personal">
+				<label for="name_last">Last Name</label>
+				<input type="text" name="name_last" id="name_last"/>
+			</div>
+			
+			<div class="personal">
+				<label for="email_address">Email Address</label>
+				<input type="text" name="email_address" id="email_address" value="example@example.com"/>
+			</div>
+			
+			<div class="personal">
+				<label for="area_code">*Phone Number (optional)</label>
+				<p>(<input type="text" name="area_code" id="area_code"/>)
+				<input type="text" name="preamble" id="preamble"/>-
+				<input type="text" name="last_four" id="last_four"/></p>
+			</div>
+			
+			<fieldset class="fs_main">
+				<legend>How do you wish to contribute?</legend>
+					<fieldset class="fs_1">
+						<legend>Volunteer</legend>
+							<dl>
+								<dt><input type="checkbox" name="advertise" id="advertise">Advertise</dt>
+								<dd>-Put up signs</dd>
+								<dd>-Pass out flyers</dd>
+								<dt><input type="checkbox" name="phones" id="phones">Work the Phones</dt>
+								<dd>-Take donations</dd>
+								<dd>-Get out the vote</dd>
+								<dt><input type="checkbox" name="polls" id="polls">Serve the Polls</dt>
+								<dd>-Monitor a polling booth</dd>
+								<dd>-Tally votes</dd>
+								<dt><input type="checkbox" name="contact" id="contact">Contact me via:
+									<select name="contact_opt" id="contact_opt">
+										<option>Select</option>
+										<option>Email</option>
+										<option>Phone</option>
+										<option>Both</option>
+									</select>
+								</dt>
+							</dl>
+					</fieldset>
+					<fieldset class="fs_2">
+						<legend>Donate</legend>
+						<p>Select an amount to give.</p>
+						<input type="radio" name="20_dollars" id="20_dollars">$20<br/>
+						<input type="radio" name="50_dollars" id="50_dollars">$50<br/>
+						<input type="radio" name="100_dollars" id="100_dollars">$100<br/>
+						<input type="radio" name="other" id="other">Other
+						<input type="text" name="other_amount" id="other_amount"><br/>
+					</fieldset>
+			</fieldset>
+		</form>
+		
+		<button class="button red">Submit</button>
 
-		<a href= "#home" class="button red">TOP</a>-->
+		<a href= "#home">TOP</a>
 
 	</div>
 	
